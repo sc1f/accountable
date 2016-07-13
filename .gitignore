@@ -1,4 +1,4 @@
 .idea
 db
 node-modules/
-.DS_Store
+.DS_Storenode_modules/\nbower_components/
