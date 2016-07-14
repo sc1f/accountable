@@ -6,6 +6,42 @@
   margin-top: 1em;
 }
 
+.headline-main {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 6em;
+  font-weight: lighter;
+  position: relative;
+  top: 55vh;
+  left: .5em
+}
+
+.headline-sub {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 1.5em;
+  font-weight: lighter;
+  position: relative;
+  top: 55vh;
+  left: 2em;
+  font-style: italic;
+}
+
+.headline-byline {
+  color: #fff;
+  position: relative;
+  top: 55vh;
+  left: 3em;
+  text-transform: uppercase;
+}
+
+.headline-date {
+  color: #fff;
+  position: relative;
+  top: 55vh;
+  left: 3em;
+  text-transform: uppercase;
+}
 .container.homepage {
   background: $theme_orange;
   height: 100vh;
