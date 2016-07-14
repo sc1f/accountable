@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "build_css": "node-sass --output-style compressed -o public/css/ assets/scss/main.scss",
-    "watch_css": "nodemon -e scss -x 'npm run build-css'"
+    "watch_css": "nodemon -e scss -x 'npm run build_css'"
   },
   "dependencies": {
     "body-parser": "~1.15.1",

@@ -1,0 +1,84 @@
+// navbar
+
+.navbar-top {
+  align-content: center;
+  background: $theme_orange;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 1em;
+  
+  a {
+    border-radius: 5px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    height: 2em;
+    line-height: 2;
+    padding: 0 1em;
+    &:hover, &:active {
+      background: darken($theme_orange, 5%);
+    }
+    font-weight: 400;
+  }
+
+  #center-contain {
+    line-height: 2.5;
+  }
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: Roboto Mono;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 1;
+}
+
+.fa.fa-share:after {
+  content: "Share";
+  font-family: Roboto;
+  font-size: 1.5rem;
+  margin-left: .5em;
+  font-weight: bold;
+}
+
+.fa.fa-close:after {
+  content: "Close";
+  font-family: Roboto;
+  font-size: 1.5rem;
+  margin-left: .5em;
+  font-weight: bold;
+}
+
+.share-menu {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 4em;
+  right: 1em;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0;
+
+  a > p {
+    color: $text_color;
+    font-size: 1.25em;
+  }
+  
+  a:hover {
+    color: darken($text_color, 25%);
+  }
+}
+
+.menu-header {
+  border: none;
+}
+
+footer {
+  height: 5em;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

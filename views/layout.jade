@@ -2,12 +2,33 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/css/spectre.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/css/main.css')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-  body
-    header
-        p some content
-        a(href="/")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src="/js/app.js")
+
+      body
+    header(class="navbar-top")
+        a(href="http://dailytexanonline.com")   Home
+        div(id="center-contain")
+            span(class="navbar-brand")  The Daily Texan
+            vr
+            span(class="navbar-brand bold") FEATURES
+        a(href="#" id="share-menu-trigger")
+            i(class="fa fa-share", id="share-btn")
+    ul(class="menu share-menu")
+      a(href="#")
+        p
+            i(class="fa fa-facebook menu-header-text tooltip-left", data-tooltip="Share on Facebook", id="fb-share")
+      a(href="#")
+        p
+            i(class="fa fa-twitter menu-header-text", data-tooltip="Share on Twitter", id="twitter-share")
+      a(href="#")
+        p
+            i(class="fa fa-copy menu-header-text", data-tooltip="Copy link", id="link-share")
+
     block content
     footer
 
