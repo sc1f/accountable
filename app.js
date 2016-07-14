@@ -14,6 +14,8 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/sg-db');
 
+var sass = require('node-sass');
+
 var app = express();
 
 // view engine setup
